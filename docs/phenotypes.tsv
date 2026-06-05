@@ -21,6 +21,6 @@ RYR1	Reference;c.38T>G;c.51_53del;c.97A>G;c.103T>C;c.119G>C;c.130C>T;c.131G>A;c.
 SLCO1B1	*1;*2;*4;*5;*6;*8;*9;*10;*11;*14;*15;*16;*19;*20;*23;*24;*25;*26;*27;*28;*29;*30;*31;*32;*33;*34;*36;*37;*39;*40;*41;*42;*43;*44;*45.001;*45.002;*47;*50;*51;*52;*53;*54;*55;*56;*57;*58	Decreased Function;Increased Function;Indeterminate;Normal Function;Poor Function;Possible Decreased Function	
 TPMT	*1;*2;*3A;*3B;*3C;*4;*5;*6;*7;*8;*9;*10;*11;*12;*13;*14;*15;*16;*17;*18;*19;*20;*21;*22;*23;*24;*25;*26;*27;*28;*29;*30;*31;*32;*33;*34;*35;*36;*37;*38;*39;*40;*41;*42;*43;*44;*45;*46;*47	Indeterminate;Intermediate Metabolizer;Normal Metabolizer;Poor Metabolizer;Possible Intermediate Metabolizer	
 UGT1A1	*1;*6;*27;*28;*36;*37;*80;*80+*28;*80+*37	Indeterminate;Intermediate Metabolizer;Normal Metabolizer;Poor Metabolizer	
-VKORC1	rs9923231 reference (C);rs9923231 variant (T)	-1639 AA;-1639 AG;-1639 GG	
+VKORC1	rs9923231 reference (C);rs9923231 variant (T)		
 HLA-A	*31:01			
 HLA-B	*15:02;*57:01;*58:01			

@@ -1745,15 +1745,10 @@ If you are using [outside calls](/using/Outside-Call-Format), you can see how we
 <table>
 <tr>
 <th style="text-align: left">Named Variants</th>
-<th style="text-align: left">CPIC Phenotypes</th>
 </tr>
 <tr>
 <td style="vertical-align: top"><ul style="padding-left: 1rem"><li>rs9923231 reference (C)</li>
 <li>rs9923231 variant (T)</li>
-</ul></td>
-<td style="vertical-align: top"><ul style="padding-left: 1rem"><li>-1639 AA</li>
-<li>-1639 AG</li>
-<li>-1639 GG</li>
 </ul></td>
 </tr>
 </table>
