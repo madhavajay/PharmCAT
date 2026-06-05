@@ -147,13 +147,17 @@ public class BaseConfig {
         reporterHtml = cliHelper.hasOption("reporterHtml");
       }
 
-      if (researchMode) {
+      boolean keepFullReport = "1".equals(System.getenv("PHARMCAT_CYP2D6"))
+          || "true".equalsIgnoreCase(System.getenv("PHARMCAT_FULL_REPORT"));
+      if (researchMode && !keepFullReport) {
         System.out.println("WARNING: FULL REPORTER OUTPUT NOT AVAILABLE IN RESEARCH MODE");
         if (!reporterCallsOnlyTsv) {
           reporterCallsOnlyTsv = true;
         }
         reporterHtml = false;
         reporterJson = false;
+      } else if (researchMode) {
+        System.out.println("WARNING: RESEARCH MODE ENABLED WITH FULL REPORTER OUTPUT (PHARMCAT_CYP2D6/PHARMCAT_FULL_REPORT)");
       }
 
       if (cliHelper.hasOption("rs")) {

@@ -72,6 +72,10 @@ RUN mkdir /pharmcat
 WORKDIR /pharmcat
 ENV PATH="$PATH:/pharmcat"
 ENV PCAT_PLATFORM=docker
+# Set PHARMCAT_CYP2D6=1 (e.g. `docker run -e PHARMCAT_CYP2D6=1 ...`) to call CYP2D6
+# from the VCF AND keep the full HTML/JSON report. CYP2D6-from-VCF is research-grade
+# (cannot resolve duplications/hybrids/CNVs). Default 0 = stock PharmCAT behaviour.
+ENV PHARMCAT_CYP2D6=0
 
 # download fasta files
 RUN wget https://zenodo.org/record/7288118/files/GRCh38_reference_fasta.tar && \

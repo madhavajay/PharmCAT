@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 from pathlib import Path
 from typing import Optional, List
@@ -26,8 +27,11 @@ def add_matcher_java_args(java_args: List[str], cli_args):
         java_args.append('-ma')
     if cli_args.matcher_save_html:
         java_args.append('-matcherHtml')
-    if cli_args.research_mode:
-        java_args.extend(['-research', cli_args.research_mode])
+    research_mode = cli_args.research_mode
+    if os.environ.get('PHARMCAT_CYP2D6', '').lower() in ('1', 'true', 'yes', 'on'):
+        research_mode = 'cyp2d6' if not research_mode else f'{research_mode},cyp2d6'
+    if research_mode:
+        java_args.extend(['-research', research_mode])
     if cli_args.genes:
         java_args.extend(['-g', cli_args.genes])
 
